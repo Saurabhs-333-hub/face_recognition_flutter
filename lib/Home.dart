@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
         if (!mounted) {
           return;
         }
-        cameraController!.startImageStream((imageFromStream) {
+        cameraController!.startImageStream((imageFromStream){
           if (isWorking) {
             isWorking = true;
             performDetectionOnStreamFrames(imageFromStream);
